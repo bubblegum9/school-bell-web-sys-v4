@@ -47,6 +47,6 @@ echo "to turn off type deactivate"
 # create apache2 symbolic link
 # (a2ensite is a part of apache2)
 sudo a2ensite coffeebell.conf
-sudo systemctl enable coffeebell.conf
-sudo systemctl start coffeebell.conf
+sudo systemctl enable coffeebell.service
+sudo systemctl start coffeebell.service
 sudo systemctl reload apache2
