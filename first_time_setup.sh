@@ -16,21 +16,21 @@ pip3 install -I flask RPi.GPIO python-dotenv tinydb gpiozero smbus gunicorn
 sudo pip3 install flask RPi.GPIO python-dotenv tinydb gpiozero smbus gunicorn
 
 echo "INSTALLING PYTHON LIB'S"
-source /home/lex/school-bell-web-sys-v4/venv-coffee/bin/activate
+source /home/lex/school-bell-web-sys-v4/venv-tofu/bin/activate
 pip3 install -I flask RPi.GPIO python-dotenv tinydb gpiozero smbus gunicorn
 deactivate
 
 #python3 -m venv venv-tofu
-echo "run: source llamabell/bin/activate"
+echo "run: source venv-tofu/bin/activate"
 echo "to turn off type deactivate"
 
 # copy sysd service
-#sudo cp coffeebell.service /etc/systemd/system/
+#sudo cp tofu.service /etc/systemd/system/
 # copy apache2 service
-#sudo cp coffeebell.conf /etc/apache2/sites-available/
+#sudo cp tofu.conf /etc/apache2/sites-available/
 # create apache2 symbolic link
 # (a2ensite is a part of apache2)
-#sudo a2ensite coffeebell.conf
-#sudo systemctl enable coffeebell.service
-#sudo systemctl start coffeebell.service
+#sudo a2ensite tofu.conf
+#sudo systemctl enable tofu.service
+#sudo systemctl start tofu.service
 #sudo systemctl reload apache2

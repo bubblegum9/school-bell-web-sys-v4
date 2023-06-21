@@ -172,7 +172,7 @@ def timechange():
 #### and start both of the threads for ringing the bell and interfacing with the lcd
 #####################################################################################
 if __name__=='__main__':
-    #payload = db.get(q.type == 'worklist').get('WORK')
-    #bell_relay_Switcher_THREAD.start()
-    #lcd_interface_THREAD.start()
+    payload = db.get(q.type == 'worklist').get('WORK')
+    bell_relay_Switcher_THREAD.start()
+    lcd_interface_THREAD.start()
     app.run(host='127.0.0.1', port=8080, debug=True)
