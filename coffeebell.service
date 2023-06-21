@@ -5,9 +5,9 @@ After=network.target
 [Service]
 User=lex
 Group=www-data
-WorkingDirectory=/srv/coffeebell/Software/
-Environment="PATH=/srv/coffeebell/Software/coffeebell/bin"
-ExecStart=/srv/coffeebell/Software/venv-coffee/bin/gunicorn --config gunicorn.py wsgi:app
+WorkingDirectory=/home/zvono/school-bell-web-sys-v4/
+Environment="PATH=/home/zvono/school-bell-web-sys-v4/bin"
+ExecStart=/home/zvono/school-bell-web-sys-v4/venv-coffee/bin/gunicorn --config gunicorn.py wsgi:app
 
 [Install]
 WantedBy=multi-user.target
