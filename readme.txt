@@ -1,1 +1,0 @@
-# we now install all files under /srv/
