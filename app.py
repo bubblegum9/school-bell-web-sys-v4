@@ -14,8 +14,8 @@ import I2C_LCD_driver
 #### Create connection with the database, and get
 #### the secret key for changing ring times
 ##################################################
-#/home/tszvono/school-bell-web-sys-V2
-db = TinyDB('/srv/coffeebell/Software/db.json')
+#/home/lex/school-bell-web-sys-v4/db.json
+db = TinyDB('/home/lex/school-bell-web-sys-v4/db.json')
 q = Query()
 secretkey = db.get(q.type == 'secretkey').get('key')
 

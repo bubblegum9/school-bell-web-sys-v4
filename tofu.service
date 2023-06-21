@@ -1,0 +1,13 @@
+[Unit]
+Description=CoffeeBell SysD Service
+After=network.target
+
+[Service]
+User=lex
+Group=www-data
+WorkingDirectory=/home/lex/school-bell-web-sys-v4/
+Environment="PATH=/home/lex/school-bell-web-sys-v4/bin"
+ExecStart=/home/lex/school-bell-web-sys-v4/venv-tofu/bin/gunicorn --config gunicorn.py wsgi:app
+
+[Install]
+WantedBy=multi-user.target
